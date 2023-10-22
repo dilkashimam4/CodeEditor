@@ -1,0 +1,63 @@
+/* Container for teditorhe code editor */
+.codeEditor {
+    background-color: #524848;
+    color: #ffffff;
+    border: 1px solid #3b3b3b;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    
+  }
+  
+  /* Header of the code editor */
+  .codeEditor__header {
+    background: #333;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+  
+  /* Style for the buttons in the header */
+  .codeEditor__button {
+    background: #af8484;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    margin: 5px 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .codeEditor__button:hover {
+    background: #e68080;
+  }
+  
+  /* Content area for the code editor */
+  .codeEditor__content {
+    padding: 10px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    border-top: 1px solid #3b3b3b;
+    max-height: 400px;
+  }
+  
+  /* Style for the text inside the code editor */
+  .codeEditor pre {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+  }
+  
+  /* Example syntax highlighting for JavaScript */
+  .codeEditor pre .keyword {
+    color: #ff9f43;
+  }
+  
+  .codeEditor pre .comment {
+    color: #9b9b9b;
+    font-style: italic;
+  }
+  
